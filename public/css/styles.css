@@ -1,0 +1,580 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background: #F1F3FF;
+  height: 500px;
+}
+
+.navbar-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #F1F3FF;
+}
+
+nav {
+  width: 100%;
+  height: 36px;
+}
+
+.logo {
+  background: #0D28A6;
+  width: 100px;
+  height: 34px;
+}
+
+ul li{
+  margin-right: 32px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#btn-green {
+  background-color: #5CB85F;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url(
+    "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2834, 34, 34, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+    )
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.offcanvas {
+  --bs-offcanvas-width: 50%;
+}
+
+.offcanvas-title {
+  font-weight: 700;
+}
+
+.hero-text {
+  padding-top: 60px;
+}
+
+.hero-text h1 {
+  margin-top: 117px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.hero-text p {
+  margin-top: 16px;
+  width: 468px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.car-image {
+  margin-top: 33px;
+  padding-top: 60px;
+  position: absolute;
+  right: 0;
+}
+
+#shape {
+  width: 704px;
+  height: 243px;
+  background: #0D28A6;
+  border-radius: 60px 0px 0px 0px;
+  margin-top: 197px;
+}
+
+.navbar-toggler-icon {
+  margin-right: 0;
+}
+
+/* our section */
+
+.our-section {
+  margin-top: 104px;
+}
+
+.right-img {
+  text-align: right; 
+  padding: 0;
+}
+
+.right-img img {
+  margin-right: 61px;
+}
+
+.desc {
+  margin-top: 36px;
+}
+
+.desc h1 {
+  margin-left: 39px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.desc p {
+  margin-top: 24px;
+  margin-left: 39px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.desc ul {
+  margin-left: 39px;
+}
+
+.desc ul li {
+  padding-bottom: 18px;
+}
+
+.desc ul img {
+  padding-right: 16px;
+}
+
+
+/* why us section */
+
+.why-us h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 100px 0 16px 0;
+}
+
+.why-us p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card, .card-body {
+  width: 268px;
+}
+
+.card-body h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-body h5, .card-body img {
+  margin-bottom: 16px;
+}
+
+/* testimonial carousel */
+
+.testimonial-header h1, .testimonial-header p {
+  text-align: center;
+}
+
+.testimonial-header h1 {
+  margin-top: 100px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.testimonial-header p {
+  margin-bottom: 40px;
+}
+
+.carousel-1 {
+  width: 619px;
+  height: 270px;
+  background-color: #F1F3FF;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: none;
+  margin: 0 auto;
+}
+
+.statement-testimonial {
+  width: 415px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.image-desc {
+  height: 100%;
+  align-items: center;
+}
+
+.image-testimonial {
+  margin: 95px 0 95px 46px;
+}
+
+.desc-testimonial {
+  margin-right: 32px;
+}
+
+.carousel-item {
+  align-content: center;
+  margin-bottom: 24px;
+}
+
+.d-block {
+  background-color: red;
+}
+
+.prev-button {
+  margin-right: 12px;
+}
+
+.next-button {
+  margin-left: 12px;
+}
+
+.prev-button, .next-button {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+/* getting started */
+
+.getting-started {
+  margin-top: 100px;
+}
+
+.cta-banner {
+  background: #0D28A6;
+  width: 100%;
+  height: 326px;
+  margin: 0 auto;
+  border-radius: 13px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.cta-banner h1 {
+  padding-top: 64px;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.cta-banner p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 16px 0 52px;
+}
+
+
+/* faq */
+
+.faq-section {
+  margin-top: 100px;
+}
+
+.faq-desc {
+  width: 100%;
+}
+
+.faq-desc h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.faq-desc p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.accordion {
+  align-content: right;
+  width: 668px;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  border: none;
+}
+
+.accordion-button {
+  font-size: 14px;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+}
+
+.accordion-body {
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+}
+
+/* footer */
+
+footer {
+  margin: 150px 0 100px;
+}
+
+.address-info, .social-media, .copyright {
+  width: 268px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.navigation {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.navigation ul li {
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+
+.logo-footer {
+  background: #0D28A6;
+  width: 100px;
+  height: 34px;
+  margin: 0;
+}
+
+span {
+  margin-right: 16px;
+}
+
+/* offset */
+
+.offset::before {
+  display: block;
+  content: " ";
+  height: 10px;
+  margin-top: -10px;
+  visibility: hidden;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 767px) {
+  header {
+    background: #F1F3FF;
+    height: 630px !important;
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    margin-top: 32px;
+  }
+
+  .hero-text p {
+    width: auto;
+  }
+
+  .hero-text br {
+    display: none;
+  }
+
+  .hero-container {
+    background: #F1F3FF;
+    width: 100%;
+  }
+
+  .car-image {
+    position: absolute;
+    margin-top: 24px;
+    padding-top: 0;
+    width: 97%;
+    right: 0;
+  }
+
+  .offcanvas {
+    --bs-offcanvas-width: 50% !important;
+  }
+
+  /* our-service */
+
+  .our-section {
+    margin-top: 104px;
+  }
+
+  .right-img img {
+    width: 70%;
+  }
+
+  .desc h1, .desc p, .desc ul {
+    margin-left: 0;
+  }
+
+  .desc p br {
+    display: none;
+  }
+
+  /* why us */
+
+  .why-us h1 {
+    margin-top: 62px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #text-center {
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 16px;
+  }
+
+  .card-body br {
+    display: none;
+  }
+
+  .card, .card-body {
+    width: auto;
+  }
+
+  /* testimonial */
+
+  #img-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial-section {
+    height: auto;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .image-testimonial {
+    margin: 40px auto 24px;
+  }
+
+  .desc-testimonial {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .statement-testimonial {
+    width: auto;
+    margin: 8px 32px 8px;
+    text-align: left;
+  }
+
+  .name {
+    text-align: left;
+    margin: 0 32px 16px;
+  }
+
+  /* getting started */
+
+  .cta-banner {
+    height: auto;
+  }
+
+  .cta-banner h1 {
+    width: 212px;
+    margin: auto;
+  }
+
+  .cta-banner p {
+    width: 212px;
+  }
+
+  .cta-banner button {
+    margin-bottom: 64px;
+  }
+
+  /* faq */
+
+  .faq-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-desc {
+    text-align: center;
+  }
+
+  .accordion {
+    width: auto;
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 60px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyright {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header {
+    height: 920px;
+  }
+
+  .offcanvas {
+    --bs-offcanvas-width: 25%;
+  }
+
+  /* our service */
+
+  .desc h1, .desc p, .desc ul {
+    margin-left: 0;
+  }
+
+  .right-img {
+    text-align: center;
+  }
+
+  .right-img img {
+    margin: 0;
+  }
+
+  /* why-us */
+
+  .card {
+    margin-bottom: 24px;
+  }
+
+  /* faq */
+
+  .faq-section {
+    flex-direction: column;
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 80px;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
+}
