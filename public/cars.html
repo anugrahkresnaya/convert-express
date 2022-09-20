@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cars.css">
   </head>
   <body>
     <header>
@@ -49,7 +50,6 @@
           <div class="col-lg hero-text">
             <h1>Sewa & Rental Mobil Terbaik di<br>kawasan Bekasi</h1>
             <p>Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas<br>terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
-            <button class="btn" id="btn-green">Mulai Sewa Mobil</button>
           </div>
           <div class="col-lg">
             <img src="images/img_car.png" class="car-image" alt="car image">
@@ -58,7 +58,48 @@
       </div>
     </header>
     <main>
-      <h1>Test</h1>
+      <section class="container filter-car">
+        <form>
+          <div class="row">
+            <div class="col col-margin">
+              <p>Tipe Driver</p>
+              <div class="input-group">
+                <select class="form-select" id="form-style">
+                  <option hidden>Pilih Tipe Driver</option>
+                  <option>Dengan Sopir</option>
+                  <option>Tanpa Sopir (Lepas Kunci)</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <p>Tanggal</p>
+              <div class="input-group">
+                <input type="date" class="form-control" id="form-style" />
+              </div>
+            </div>
+            <div class="col">
+              <p>Waktu Jemput/Ambil</p>
+              <div class="input-group">
+                <select class="form-select" id="form-style">
+                  <option hidden>Pilih Waktu</option>
+                  <option>08.00</option>
+                  <option>09.00</option>
+                  <option>10.00</option>
+                  <option>11.00</option>
+                  <option>12.00</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <p>Jumlah Penumpang (optional)</p>
+              <input type="text" class="form-control" id="form-style" placeholder="Jumlah Penumpang" />
+            </div>
+            <div class="col">
+              <button type="button" class="btn" id="btn-green">Cari Mobil</button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
       <div class="container-md d-flex justify-content-between footer-container">
