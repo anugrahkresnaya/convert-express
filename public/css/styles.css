@@ -368,13 +368,6 @@ span {
   visibility: hidden;
 }
 
-/* filter car component */
-.filter-car {
-  position: relative;
-  margin-top: -3em;
-  z-index: 10;
-}
-
 /* media queries */
 
 @media only screen and (max-width: 767px) {

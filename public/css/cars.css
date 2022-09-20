@@ -4,6 +4,9 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
   background: #FFFFFF;
+  position: relative;
+  margin-top: -3em;
+  z-index: 10;
 }
 
 .col p {
