@@ -1,0 +1,47 @@
+.filter-car {
+  width: 1047px;
+  height: 106px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  background: #FFFFFF;
+  position: relative;
+  margin-top: -3em;
+  z-index: 10;
+}
+
+.col p {
+  margin-top: 24px;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+#form-style {
+  width: 210.75px;
+  height: 38px;
+  font-size: 12px;
+}
+
+#form-style option {
+  height: 38px;
+  line-height: 38px;
+}
+
+#btn-green {
+  background-color: #5CB85F;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 12px;
+}
+
+.col button {
+  margin-top: 46px;
+}
+
+.col-margin {
+  margin-left: 12px;
+}
+
+.col {
+  padding: 0 8px 0;
+}
