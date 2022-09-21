@@ -4,8 +4,6 @@ const { PORT = 8000 } = process.env; // Ambil port dari environment variable
 const fs = require('fs');
 const path = require('path');
 const PUBLIC_DIRECTORY = path.join(__dirname, '/../public');
-const CSS_DIRECTORY = path.join(__dirname, '/../public/css');
-const IMAGE_DIRECTORY = path.join(__dirname, '/../public/images');
 
 function getHTML(htmlFileName) {
   const htmlFilePath = path.join(PUBLIC_DIRECTORY, htmlFileName);
