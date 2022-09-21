@@ -12,11 +12,6 @@ function getHTML(htmlFileName) {
   return fs.readFileSync(htmlFilePath, 'utf-8')
 }
 
-function getCSS(cssFileName) {
-  const cssFilePath = path.join(CSS_DIRECTORY, cssFileName);
-  return fs.readFileSync(cssFilePath, 'utf-8');
-}
-
 function onRequest(req, res) {
   if (req.url === "/") {
     res.writeHead(200);
