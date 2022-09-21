@@ -34,6 +34,11 @@ function onRequest(req, res) {
     const fileStream = fs.createReadStream(imagePath);
     res.writeHead(200, { "Content-Type": "image/png" });
     fileStream.pipe(res);
+  } else if (req.url.match("\.js$")) {
+    const scriptPath = path.join(__dirname, '/../public', req.url);
+    const fileStream = fs.createReadStream(scriptPath);
+    res.writeHead(200, { "Content-Type": "text/javascript" });
+    fileStream.pipe(res);
   } else {
     res.writeHead(404, { "Content-Type": "text/html" });
     res.end("404 | No Page Found");
