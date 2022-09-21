@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "description": "Project HTTP Server dan DOM",
   "main": "server/index.js",
-  "author": "Fikri Rahmat Nurhidayat <fnurhidayat@binar.co.id>",
+  "author": "Anugrah Kresnaya <anugrah.kresnaya.ak@gmail.com>",
   "license": "MIT",
   "private": false,
   "scripts": {
     "start": "node server/index.js"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anugrahkresnaya/challenge-04.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/anugrahkresnaya/challenge-04/issues"
+  },
+  "homepage": "https://github.com/anugrahkresnaya/challenge-04#readme"
 }
