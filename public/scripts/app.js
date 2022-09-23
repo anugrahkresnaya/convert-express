@@ -23,7 +23,6 @@ class App {
 
     const getEpochTime = newDateTimeFormat.getTime();
 
-    console.log(getEpochTime)
     this.load(getEpochTime, seatValue);
   }
 
@@ -37,7 +36,7 @@ class App {
     Car.init(cars)
     Car.list.forEach((car) => {
       const node = document.createElement("div")
-      node.className = 'col-4 card card-container'
+      node.className = 'col-lg-4 card card-container'
       node.innerHTML = car.render();
       this.carContainerElement.appendChild(node);
     })
