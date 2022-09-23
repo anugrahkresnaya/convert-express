@@ -4,17 +4,10 @@ const { PORT = 8000 } = process.env; // Ambil port dari environment variable
 const fs = require('fs');
 const path = require('path');
 const PUBLIC_DIRECTORY = path.join(__dirname, '/../public');
-const CSS_DIRECTORY = path.join(__dirname, '/../public/css');
-const IMAGE_DIRECTORY = path.join(__dirname, '/../public/images');
 
 function getHTML(htmlFileName) {
   const htmlFilePath = path.join(PUBLIC_DIRECTORY, htmlFileName);
   return fs.readFileSync(htmlFilePath, 'utf-8')
-}
-
-function getCSS(cssFileName) {
-  const cssFilePath = path.join(CSS_DIRECTORY, cssFileName);
-  return fs.readFileSync(cssFilePath, 'utf-8');
 }
 
 function onRequest(req, res) {
@@ -33,6 +26,11 @@ function onRequest(req, res) {
     const imagePath = path.join(__dirname, '/../public/', req.url);
     const fileStream = fs.createReadStream(imagePath);
     res.writeHead(200, { "Content-Type": "image/png" });
+    fileStream.pipe(res);
+  } else if (req.url.match("\.jpg$")) {
+    const imagePath = path.join(__dirname, '/../public/', req.url);
+    const fileStream = fs.createReadStream(imagePath);
+    res.writeHead(200, { "Content-Type": "image/jpg" });
     fileStream.pipe(res);
   } else if (req.url.match("\.js$")) {
     const scriptPath = path.join(__dirname, '/../public', req.url);
