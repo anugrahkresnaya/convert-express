@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cars.css">
+    <script src="https://kit.fontawesome.com/a5da55aa11.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -74,31 +75,27 @@
             <div class="col">
               <p>Tanggal</p>
               <div class="input-group">
-                <input type="date" class="form-control" id="form-style" />
+                <input type="date" class="form-control" id="filter-by-date" />
               </div>
             </div>
             <div class="col">
               <p>Waktu Jemput/Ambil</p>
               <div class="input-group">
-                <select class="form-select" id="form-style">
-                  <option hidden>Pilih Waktu</option>
-                  <option>08.00</option>
-                  <option>09.00</option>
-                  <option>10.00</option>
-                  <option>11.00</option>
-                  <option>12.00</option>
-                </select>
+                <input type="time" class="form-control" id="filter-by-time" />
               </div>
             </div>
             <div class="col">
               <p>Jumlah Penumpang (optional)</p>
-              <input type="text" class="form-control" id="form-style" placeholder="Jumlah Penumpang" />
+              <input type="text" class="form-control" id="filter-by-seats" placeholder="Jumlah Penumpang" />
             </div>
             <div class="col">
-              <button type="button" class="btn" id="btn-green">Cari Mobil</button>
+              <button type="button" class="btn" id="search-filter">Cari Mobil</button>
             </div>
           </div>
         </form>
+      </section>
+      <section class="container mt-4">
+        <div class="row gap-4" id="cars-container"></div>
       </section>
     </main>
     <footer>
@@ -130,5 +127,9 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="scripts/binar.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/car.js"></script>
+    <script type="text/javascript" src="scripts/main.example.js"></script>
   </body>
 </html>

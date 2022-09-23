@@ -27,6 +27,11 @@ function onRequest(req, res) {
     const fileStream = fs.createReadStream(imagePath);
     res.writeHead(200, { "Content-Type": "image/png" });
     fileStream.pipe(res);
+  } else if (req.url.match("\.jpg$")) {
+    const imagePath = path.join(__dirname, '/../public/', req.url);
+    const fileStream = fs.createReadStream(imagePath);
+    res.writeHead(200, { "Content-Type": "image/jpg" });
+    fileStream.pipe(res);
   } else if (req.url.match("\.js$")) {
     const scriptPath = path.join(__dirname, '/../public', req.url);
     const fileStream = fs.createReadStream(scriptPath);
